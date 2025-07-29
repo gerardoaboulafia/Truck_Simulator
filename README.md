@@ -47,23 +47,34 @@ The extra truck relieves CD congestion but shifts some waiting back to the plant
 ---
 
 ## Repository layout
-Simulators
-├── sim_animado.py           # Heuristic 1 — dedicated trucks per plant
-├── 2_sim_animado.py         # Heuristic 2 — shared/free trucks
-└── 2_sim_animado_4trucks.py # Heuristic 2 with one additional truck
+**Simulators**
 
-Batch runners
-├── sim_out.py   # Runs sim_animado.py N times and records KPIs
-├── sim_out_2.py # Runs 2_sim_animado.py N times
-└── sim_out_3.py # Runs 2_sim_animado_4trucks.py N times
+└─ sim_animado.py           # Heuristic 1 — dedicated trucks per plant
 
-Extracted data
-├── sim_results_h1.csv     # Results for Heuristic 1
-├── sim_results_betas.csv  # Results for Heuristic 2 (β sweep)
-└── sim_results_4trucks.csv# Results for Heuristic 2 + extra truck
+└─ 2_sim_animado.py         # Heuristic 2 — shared/free trucks
 
-Analysis
-└── Variables_Referencia.ipynb  # Notebook to explore the CSV outputs
+└─ 2_sim_animado_4trucks.py # Heuristic 2 with one additional truck
 
-Other
-└── test_invariantes.py    # Unit tests (invariant checks)
+**Batch runners**
+
+└─ sim_out.py   # Runs sim_animado.py N times and records KPIs
+
+└─ sim_out_2.py # Runs 2_sim_animado.py N times
+
+└─ sim_out_3.py # Runs 2_sim_animado_4trucks.py N times
+
+**Extracted data**
+
+└─ sim_results_h1.csv     # Results for Heuristic 1
+
+└─ sim_results_betas.csv  # Results for Heuristic 2 (β sweep)
+
+└─ sim_results_4trucks.csv# Results for Heuristic 2 + extra truck
+
+**Anlysis**
+
+└─ Variables_Referencia.ipynb  # Notebook to explore the CSV outputs
+
+**Other**
+
+└─ test_invariantes.py    # Unit tests (invariant checks)
